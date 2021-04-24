@@ -1,9 +1,10 @@
 import './top.sass'
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
+import cn from "classnames";
 const Top = () => {
-    const [loginForm,setLoginForm] = useState(false)
-    const loginHandler = () => setLoginForm(value => !loginForm)
+    const [fade,setFade] = useState(false)
+    const loginHandler = () => setFade(value => !fade)
 
     return (
         <div className={'top'}>
@@ -11,7 +12,10 @@ const Top = () => {
                 <div className="top__row">
                     <div className="top__login-block">
                         <button onClick={() => loginHandler()} className={'top__button top__button--login'}>Вход</button>
-                        {loginForm ? <form className="top__login-form">
+                        {fade ? <form className= {cn({
+                            'top__login-form':'top__login-form',
+                            fade: fade ? 'fade' : ''
+                        })}>
                             <input placeholder={'E-mail'} type="text" className="top__login-input"/>
                             <input placeholder={'Пароль'}  type="password" className="top__login-input"/>
                             <button className={'top__login-button'}>Войти</button>
