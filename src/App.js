@@ -5,10 +5,11 @@ import Footer from "./components/Footer/Header";
 import {Switch, Route} from 'react-router-dom'
 import Home from "./pages/Home/Home";
 import Test from "./pages/Test";
-
+import Top from "./components/Top/Top";
 const App = () => {
   return (
     <div className={'wrapper'}>
+        <Top/>
         <Header/>
         <Switch>
             <Route render={()=> <Home/>} exact path={'/'}/>
