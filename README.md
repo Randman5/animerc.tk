@@ -1,1 +1,2 @@
-САЙТ ПРО АНИМУ АЛЕЕЕЕ
+Anime
+src = http://animerc.tk/
