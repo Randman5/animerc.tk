@@ -1,7 +1,7 @@
 import './App.sass';
 import 'normalize.css'
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Header";
+import Footer from "./components/Footer/Footer";
 import {Switch, Route} from 'react-router-dom'
 import Home from "./pages/Home/Home";
 import Test from "./pages/Test";

@@ -18,6 +18,20 @@
     padding: 10px
     background-color: $black-two
     width: 280%
+    &--fade
+      animation: fade .5s
+      @keyframes fade
+        0%
+          opacity: 0
+        100%
+          opacity: 1
+    &--fade-out
+      animation: fade .5s
+      @keyframes fade-out
+        0%
+          opacity: 1
+        100%
+          opacity: 0
 
   &__login-input
     width: 100%
@@ -57,10 +71,3 @@
     &--green-background
       background-color: $main-green
       text-decoration: none
-.fade
-  animation: fade 1s
-@keyframes fade
-  from
-    opacity: 0
-  to
-    opacity: 1
