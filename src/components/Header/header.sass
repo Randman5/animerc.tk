@@ -22,6 +22,13 @@
       cursor: pointer
       &:hover
         background: $main-red-hover
+      &:hover .header__sub-menu
+        display: flex
+      &::after
+        content: ''
+        position: absolute
+        width: 50px
+        height: 50px
   &__link
     display: flex
     flex-direction: column
@@ -30,4 +37,27 @@
     color: $main-text
     & span
       font-size: 10px
+  &__sub-menu
+    position: absolute
+    right: 0
+    top: 74px
+    z-index: 2
+    display: none
+    flex-direction: column
+    background-color: #222
+    &-item
+      padding: 15px
+      width: 200px
+      border-bottom: 1px solid #444
+      &:hover
+        background-color: #444
+      &:last-child
+        border-bottom: 3px solid $main-red
+      & a
+        text-transform: none
+        text-decoration: none
+        color: $main-text
+        &::first-letter
+          text-transform: uppercase
+
 
