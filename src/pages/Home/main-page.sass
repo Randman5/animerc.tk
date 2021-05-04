@@ -1,1 +1,55 @@
 @import "src/sass/vars"
+.main-page
+  &__update-wrapper
+    display: flex
+    margin: 0 0 0 -20px
+  &__block
+    margin-bottom: 20px
+    padding: 0 0 0 20px
+    flex: 1
+    &-post
+      display: flex
+      align-items: center
+      width: 100%
+      text-decoration: none
+      background: #fff
+      color: #333
+      transition: .3s box-shadow
+      &:hover
+        box-shadow: inset 3px 0 0 0 #3cce7b
+      &--not-even
+        background: #f5f5f5
+    &-date
+      font-size: 14px
+      padding: 7px 4px
+      white-space: nowrap
+      border-right: 1px solid #e2e2e2
+    &-img
+      display: block
+      width: 100%
+      max-width: 33px
+    &-text
+      padding: 0 10px
+      font-size: 14px
+    &-name
+      font-weight: 700
+    &-separator
+      margin: 0 4px
+.home-header
+    position: relative
+    display: flex
+    background: #333333
+    padding: 13px 15px
+    border-bottom: 3px solid $main-red
+    &__title
+      flex: 1 auto
+      text-align: center
+      text-transform: uppercase
+      font-size: 14px
+    &__link
+      position: absolute
+      right: 15px
+      color: #fff
+      font-size: 14px
+
+
