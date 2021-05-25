@@ -1,8 +1,7 @@
 import './main-page.sass'
-import './main-page.sass'
 import HomeHeader from "../../components/Home/HomeHeader/HomeHeader";
-import HomePost from "../../components/Home/HomePost/HomePost";
 import SliderContainer from "../../components/Slider/SliderContainer";
+import HomePostContainer from "../../components/Home/HomePost/HomePostContainer";
 
 
 const Home = () => {
@@ -14,10 +13,11 @@ const Home = () => {
                     <div className="main-page__update-wrapper">
                         <div className="main-page__block">
                             <HomeHeader title={'обновления аниме'} link={'#'} linkTitle={'Все обновления'} />
-                            <HomePost/>
+                            <HomePostContainer namePosts={'last-anime'}/>
                         </div>
                         <div className="main-page__block">
                             <HomeHeader title={'Новости'} link={'#'} linkTitle={'Все новости'} />
+                            <HomePostContainer namePosts={'news'}/>
                         </div>
                     </div>
                 </div>

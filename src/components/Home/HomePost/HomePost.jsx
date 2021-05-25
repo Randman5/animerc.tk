@@ -1,21 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
-import image from "../../../images/slider/image1.jpg";
 import cn from 'classnames'
-const HomePost = () =>{
-    const [posts,setPosts] = useState([])
-    useEffect(()=>{
-        setPosts([
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-            {link: '#',date: '01 Мая', img: image, name:'Зомбиленд. Сага: Месть', info: 'Добавлена 4-я серия: Озвучка SovetRomantica. Плеер Sr.'},
-        ])
-    },[setPosts])
+const HomePost = ({posts}) =>{
     return (
         <>
             {posts.map((post, index)=>{
