@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import cn from 'classnames'
-const HomePost = ({posts}) =>{
+const HomePost = ({namePosts,posts}) =>{
     return (
         <>
             {posts.map((post, index)=>{
@@ -12,7 +12,7 @@ const HomePost = ({posts}) =>{
                     <div className="main-page__block-date">
                         {post.date}
                     </div>
-                    <img src={post.img} className={'main-page__block-img'} alt=""/>
+                 {namePosts === 'news' ? null : <img src={post.img} className={'main-page__block-img'} alt=""/>}
                     <div className="main-page__block-text">
                         <span className={'main-page__block-name'}>{post.name}</span>
                         <span className={'main-page__block-separator'}>-</span>

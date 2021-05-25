@@ -39,11 +39,11 @@ const HomePostContainer = ({addPosts,posts,namePosts,addNews,news}) =>{
     switch (namePosts) {
         case 'last-anime':
             return (
-                <HomePost posts={posts} />
+                <HomePost namePosts={namePosts} posts={posts} />
             )
         case 'news':
             return (
-                <HomePost posts={news} />
+                <HomePost namePosts={namePosts} posts={news} />
             )
         default:
             return
