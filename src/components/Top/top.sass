@@ -12,7 +12,7 @@
     position: relative
   &__login-form
     position: absolute
-    z-index: -1
+    z-index: 1
     display: flex
     flex-direction: column
     align-items: center
@@ -20,10 +20,11 @@
     background-color: $black-two
     min-width: 226px
     opacity: 0
-    transition: opacity .2s
+    pointer-events: none
+    transition: opacity .3s
     &--fade
-      z-index: 1
       opacity: 1
+      pointer-events: all
   &__login-input
     width: 100%
     padding: 5px 8px
