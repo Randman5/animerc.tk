@@ -16,12 +16,12 @@ const Slider = ({slides}) =>{
             <Swiper slidesPerGroup ={4} loop autoplay navigation={{
                 prevEl: '.arrow--prev',
                 nextEl:'.arrow--next'
-            }} slidesPerView={8}>
+            }} slidesPerView={7}>
                 {slides.map((slide, index) =>{
                     return  <SwiperSlide key={index} >
                         <Link to={''} className={'slider__link'} href="">
                             <img  className={'slider__image'} src={slide.image} alt=""/>
-                            <span className={'slider__name'}>
+                            <span title={slide.title} className={'slider__name'}>
                                         {slide.name}
                                     </span>
                         </Link>

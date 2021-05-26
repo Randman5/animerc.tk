@@ -18,6 +18,8 @@ const Home = () => {
                         <div className="main-page__block">
                             <HomeHeader title={'Новости'} link={'#'} linkTitle={'Все новости'} />
                             <HomePostContainer namePosts={'news'}/>
+                            <HomeHeader title={'Анонсы'} link={'#'} linkTitle={'Все анонсы'} />
+                            <HomePostContainer namePosts={'previews'}/>
                         </div>
                     </div>
                 </div>

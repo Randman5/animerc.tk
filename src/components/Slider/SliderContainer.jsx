@@ -25,71 +25,88 @@ const SliderContainer = ({slides,addSlides}) =>{
             [
                 {
                     image: image1,
-                    name: 'Название аниме',
+                    name: 'Судьба/Великая Кампания: Камелот — П...',
+                    title: 'anime'
                 },
                 {
                     image: image12,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image2,
-                    name: 'Название аниме',
+                    name: 'Убивая слизней 300 лет, сама того не заметив, я..',
+                    title: 'anime'
                 },
                 {
                     image: image3,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image4,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image5,
-                    name: 'Название аниме',
+                    name: 'Виви: Песнь флюоритового глаза',
+                    title: 'anime'
                 },
                 {
                     image: image6,
-                    name: 'Название аниме',
+                    name: 'Прощай, мой дорогой Крамер',
+                    title: 'anime'
                 },
                 {
                     image: image7,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image8,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image9,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image10,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image11,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image12,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image13,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image14,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image15,
                     name: 'Название аниме',
+                    title: 'anime'
                 },
                 {
                     image: image16,
-                    name: 'Название аниме',
+                    name: 'Что, если чрезвычайно развитая ролевая игра...',
+                    title: 'anime'
                 },
             ]
         )
