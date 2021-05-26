@@ -2,6 +2,8 @@ import './main-page.sass'
 import HomeHeader from "../../components/Home/HomeHeader/HomeHeader";
 import SliderContainer from "../../components/Slider/SliderContainer";
 import HomePostContainer from "../../components/Home/HomePost/HomePostContainer";
+import NewAnime from "../../components/NewAnime/NewAnime";
+import AsideContent from "../../components/AsideContent/AsideContent";
 
 
 const Home = () => {
@@ -21,6 +23,10 @@ const Home = () => {
                             <HomeHeader title={'Анонсы'} link={'#'} linkTitle={'Все анонсы'} />
                             <HomePostContainer namePosts={'previews'}/>
                         </div>
+                    </div>
+                    <div className="main-page__content">
+                        <NewAnime/>
+                        <AsideContent/>
                     </div>
                 </div>
             </section>

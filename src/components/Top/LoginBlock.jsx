@@ -6,7 +6,9 @@ const LoginBlock = () => {
     const loginForm = useRef(null)
     return (
         <div className="top__login-block">
-            <button onClick={() => loginForm.current.classList.toggle('top__login-form--fade')} className={'top__button top__button--login'}>Вход</button>
+            <button onClick={(e) => {
+                loginForm.current.classList.toggle('top__login-form--fade')
+            }} className={'top__button top__button--login'}>Вход</button>
            <form ref={loginForm} className= {cn({'top__login-form': 'top__login-form'})}>
                 <input placeholder={'E-mail'} type="text" className="top__login-input"/>
                 <input placeholder={'Пароль'}  type="password" className="top__login-input"/>
